@@ -149,8 +149,8 @@ export const projects = [
         ],
         image: 'portfolio.png',
         screenshots: ['portfolio.png', 'portfolio1.png', 'portfolio2.png', 'portfolio3.png', 'portfolio4.png', 'portfolio5.png','portfolio6.png','portfolio7.png','portfolio8.png','portfolio9.png'],
-        liveLink: 'https://kiru-weatherapp.netlify.app/',
-        codeLink: 'https://github.com/yourusername/todo-app',
+        liveLink: 'https://kiru-portfolio.netlify.app/',
+        codeLink: 'https://github.com/Kiruthick3/portfolio',
         techStack: ['React', 'Javascript', 'css'],
         features: [
             'Responsive layout with Dark/Light mode toggle support.',
