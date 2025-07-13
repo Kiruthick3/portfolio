@@ -1,0 +1,200 @@
+export const projects = [
+    {
+        id: '1',
+        title: 'Todo App',
+        description: 'A todo list app with CRUD functionalities.',
+        fullDescription: [
+            'The Todo App is a full-stack productivity application designed to help users manage daily tasks efficiently while ensuring secure user access through authentication. It allows users to add, edit, and delete todos in real time with a clean and intuitive interface.',
+            'Built with a strong focus on usability, the app features secure user authentication using JSON Web Tokens (JWT), enabling account creation (sign-up), login, and logout functionalities. Additionally, users can reset forgotten passwords and change their passwords after logging in, enhancing security and user control.',
+            'This project demonstrates a solid understanding of CRUD operations, RESTful APIs, and authentication workflows, making it a complete end-to-end user-focused application.'
+        ],
+        image: 'todo1.png',
+        screenshots: ['todo1.png', 'todo2.png', 'todo3.png', 'todo4.png', 'todo5.png','todo6.png',],
+        liveLink: 'https://todowebap3.netlify.app/',
+        codeLink: ['https://github.com/Kiruthick3/todo-backend', ],
+        techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Mongoose'],
+        features: [
+            'Add, edit, and delete todos in real-time',
+            'User authentication using JSON Web Tokens (JWT)',
+            'Secure sign-up, login, and logout functionalities',
+            'Forgot password and change password flows with validation',
+            'Fully responsive design across devices',
+            'Backend built with RESTful API structure',
+            'Real-time updates reflected instantly on the frontend'
+        ],
+        folderStructure: [
+        '<span class="folder">todo project/</span>',
+        ' ┣ <span class="folder">todo-backend/</span>',
+        '     ┣ <span class="folder">controllers/</span>',
+        '        ┣ <span class="file-js">todoController.js</span>',
+        '        ┗ <span class="file-js">userController.js</span>',
+        '     ┣ <span class="folder">models/</span>',
+        '        ┣ <span class="file-js">todoModel.js</span>',
+        '        ┗ <span class="file-js">userModel.js</span>',
+        '     ┣ <span class="folder">middleware/</span>',
+        '        ┗ <span class="file-js">authMiddleware.js</span>',
+        '     ┣ <span class="folder">routes/</span>',
+        '        ┣ <span class="file-js">authRoutes.js</span>',
+        '        ┗ <span class="file-js">todoRoutes.js</span>',
+        '     ┣ <span class="file-js">server.js</span>',
+        '     ┗ <span class="file-js">.env</span>',
+        ' ┗ <span class="folder">todo-frontend/</span>',
+        '     ┗ <span class="folder">todo-app/</span>',
+        '        ┗ <span class="folder">src/</span>',
+        '           ┣ <span class="folder">components/</span>',
+        '              ┣ <span class="file">ForgotPassword.jsx</span>',
+        '              ┣ <span class="file">Login.jsx</span>',
+        '              ┣ <span class="file">ResetPassword.jsx</span>',
+        '              ┣ <span class="file">Signup.jsx</span>',
+        '              ┗ <span class="file">TodoView.jsx</span>',
+        '           ┣ <span class="folder">controllers/</span>',
+        '              ┣ <span class="file">AuthController.jsx</span>',
+        '              ┗ <span class="file">TodoController.jsx</span>',
+        '           ┣ <span class="folder">models/</span>',
+        '              ┣ <span class="file">AuthModel.jsx</span>',
+        '              ┗ <span class="file">TodoModel.jsx</span>',
+        '           ┣ <span class="folder">styles/</span>',
+        '              ┣ <span class="file-css">Todo.css</span>',
+        '              ┗ <span class="file-css">User.css</span>',
+        '           ┣ <span class="file">App.jsx</span>',
+        '           ┗ <span class="file">main.jsx</span>'
+        ],
+        challenges: [
+            'Implementing secure authentication using JWT and protecting routes based on user state',
+            'Designing a clean and user-friendly UI that feels simple but powerful',
+            'Managing form state and validation for login, signup, and password reset',
+            'Structuring the backend to handle user-specific todos securely',
+            'Handling edge cases like token expiration and password mismatch gracefully',
+            'Gaining hands-on experience with full-stack architecture and API design'
+        ],
+        futureImprovements: [
+            'Add drag-and-drop functionality to reorder todos by priority',
+            'Add deadline and reminder support for each task',
+            'Integrate user profile with avatars',
+            'Support dark/light mode toggling',
+            'Implement filters (e.g., completed, pending, today\’s tasks)'
+        ],
+        timeline: 'Built in 2 weeks (Nov 2024)',
+        role: 'Solo Developer'
+    },
+
+
+    {
+        id: '2',
+        title: 'Weather App',
+        description: 'A real time weather application.',
+        fullDescription: [
+            'The Weather App is a real-time, location-aware application that provides accurate and visually rich weather insights. It features a detailed hourly forecast for the next 24 hours, along with a multi-day forecast for at least 3 days, helping users plan ahead with confidence.',
+            'Each day\’s weather includes interactive charts for temperature and "feels like" temperature trends, offering a deeper look into comfort conditions throughout the day. Users can search for any city with auto-complete suggestions, and the app also supports geolocation, automatically detecting the user\'s current position and showing live weather data accordingly.',
+            'The interface is clean, responsive, and built for performance — making it both functional and engaging. This project demonstrates real-world integration of APIs, responsive charting, and dynamic UI updates based on user input and location.'
+        ],
+        image: 'weather.png',
+        screenshots: ['weather.png', 'weather1.png', 'weather2.png', 'weather3.png', 'weather4.png', 'weather5.png'],
+        liveLink: 'https://kiru-weatherapp.netlify.app',
+        codeLink: 'https://github.com/Kiruthick3/weatherapp',
+        techStack: ['React', 'Javascript', 'css'],
+        features: [
+            'Real-time weather updates based on user\’s location (via geolocation)',
+            'Hourly forecast for the next 24 hours',
+            'Daily weather forecast for a minimum of 3 upcoming days',
+            'Interactive charts showing hourly temperature and feels like temperature for each day',
+            'Auto-complete city suggestions for quick and accurate search',
+            'Dynamic UI updates based on selected or current city',
+            'Clean, responsive design for all devices',
+            'Uses reliable external APIs for accurate weather data'
+        ],
+        folderStructure: [
+        '<span class="folder">src/</span>',
+        ' ┣ <span class="folder">components/</span>',
+        '     ┣ <span class="file">CurrentWeather.jsx</span>',
+        '     ┣ <span class="file">DailyForecast.jsx</span>',
+        '     ┣ <span class="file">HourlyForecast.jsx</span>',
+        '     ┣ <span class="file">LoadingSection.jsx</span>',
+        '     ┣ <span class="file">NoResult.jsx</span>',
+        '     ┗ <span class="file">SearchSection.jsx</span>',
+        ' ┣ <span class="file">App.jsx</span>',
+        ' ┣ <span class="file-js">constants.js</span>',
+        ' ┣ <span class="file-css">app.css</span>',
+        ' ┣ <span class="file">main.jsx</span>',
+        ' ┗ <span class="file-js">.env</span>',
+        ],
+        challenges: [
+            'Implementing geolocation-based weather retrieval and handling location permissions',
+            'Parsing and displaying complex API responses for both hourly and daily data',
+            'Integrating dynamic charts that update in real time and reflect temperature fluctuations accurately',
+            'Creating a smooth auto-complete search system with debouncing to prevent unnecessary API calls',
+            'Designing a UI that remains clean and readable while displaying large amounts of forecast data',
+            'Handling edge cases like no location access, city not found, and API rate limits'
+        ],
+        futureImprovements: [
+            'Include weather alerts and warnings for severe conditions',
+            'Provide multi-language support for global users',
+            'Add theming options (e.g., day/night mode, seasonal themes)',
+            'Allow saving favorite cities for quick access',
+            'Optimize offline access with local storage caching'
+        ],
+        timeline: 'Built in a week (Oct 2024)',
+        role: 'Solo Developer'
+    },
+
+     {
+        id: '3',
+        title: 'Portfolio',
+        description: 'A personal portfolio website.',
+        fullDescription: [
+            'This is a fully responsive and dynamic developer portfolio website built with modern design principles and interactive features. The site supports both dark and light mode, offering users a smooth toggle experience for different viewing preferences. It consists of essential sections including Home, About, Skills, Projects, and Contact.',
+            'The Home page includes an introduction with smooth animations, along with social media icons that link to professional profiles. The About section offers a dedicated "Read More" page for detailed background and storytelling. The Skills section is visually engaging, featuring scrolling tech icons, circular skill progress indicators, and horizontal bars for additional skills.',
+            'The Projects section displays all work in a grid, where each project links to its own detailed project page. These include project descriptions, screenshot gallery, tech stack badges, folder structure preview, live demo links, and GitHub repositories.',
+            'Finally, the Contact section includes a form that allows visitors to send direct emails, enabling easy communication with potential clients or collaborators. The design prioritizes usability, performance, and elegant presentation to leave a lasting impression.'
+        ],
+        image: 'portfolio.png',
+        screenshots: ['portfolio.png', 'portfolio1.png', 'portfolio2.png', 'portfolio3.png', 'portfolio4.png', 'portfolio5.png','portfolio6.png','portfolio7.png','portfolio8.png','portfolio9.png'],
+        liveLink: 'https://kiru-weatherapp.netlify.app/',
+        codeLink: 'https://github.com/yourusername/todo-app',
+        techStack: ['React', 'Javascript', 'css'],
+        features: [
+            'Responsive layout with Dark/Light mode toggle support.',
+            'Sections: Home, About, Skills, Projects, Contact — all navigable and animated.',
+            'Social media integration with clickable icons on the home page.',
+            'Full About page for detailed personal background and storytelling.',
+            'Skills section with animated circular and horizontal progress bars and scrolling tech icons.',
+            'Project section displaying projects in a grid with each linking to a detailed project page.',
+            'Each project page includes: description, live preview, GitHub code, screenshot gallery, tech stack, and folder structure.',
+            'Contact form with real-time email sending functionality.'
+        ],
+        folderStructure: [
+        '<span class="folder">components/</span>',
+        '    ┣ <span class="file">About.jsx</span>',
+        '    ┣ <span class="file">AboutDetails.jsx</span>',
+        '    ┣ <span class="file">Contact.jsx</span>',
+        '    ┣ <span class="file">Home.jsx</span>',
+        '    ┣ <span class="file">NavBar.jsx</span>',
+        '    ┣ <span class="file">Portfolio.jsx</span>',
+        '    ┣ <span class="file">ProjectDetails.jsx</span>',
+        '    ┣ <span class="file">Projects.jsx</span>',
+        '    ┣ <span class="file">ScrollReveal.jsx</span>',
+        '    ┗ <span class="file">Skills.jsx</span>',
+        '┣ <span class="folder">data</span>',
+        '    ┣ <span class="file-js">constants.js</span>',
+        '┣ <span class="folder">src/</span>',
+        '    ┣ <span class="file-css">App.css</span>',
+        ' ┣ <span class="file">App.jsx</span>',
+        ' ┗ <span class="file">main.jsx</span>',
+        ],
+        challenges: [
+            'Implementing a consistent theme toggle (dark/light) across all pages and components.',
+            'Designing a responsive layout that adapts to all devices while preserving the aesthetics.',
+            'Building a modular and reusable structure for project detail pages dynamically using routing.',
+            'Creating a smooth scroll animation and gallery lightbox for user experience.',
+            'Managing z-index, overlay, and interactivity without breaking design on various screen sizes.'
+        ],
+        futureImprovements: [
+            'Add blog section to share articles or case studies.',
+            'Integrate a CMS or admin dashboard to manage portfolio content dynamically.',
+            'Enhance accessibility with keyboard navigation and ARIA tags.',
+            'Add dark/light mode persistence using localStorage.'
+        ],
+        timeline: 'Built in a week (mar 2025)',
+        role: 'Solo Developer'
+    },
+];
