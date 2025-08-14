@@ -110,43 +110,6 @@ router.post("/", protect, upload.fields([{name: "image", maxCount: 1},{name:"scr
   }
 });
 
-// PUT /api/projects/:id (protected)
-// router.put("/:id", protect, upload.single("image"), async (req, res) => {
-//   try {
-//     const project = await Project.findById(req.params.id);
-//     if (!project) return res.status(404).json({ message: "Not found" });
-
-//     let imageUrl = project.image;
-//     if (req.file) {
-//       const uploadFromBuffer = (buffer) => new Promise((resolve, reject) => {
-//         const cld_upload_stream = cloudinary.uploader.upload_stream(
-//           { folder: "portfolio_projects" },
-//           (error, result) => {
-//             if (result) resolve(result);
-//             else reject(error);
-//           }
-//         );
-//         streamifier.createReadStream(buffer).pipe(cld_upload_stream);
-//       });
-
-//       const result = await uploadFromBuffer(req.file.buffer);
-//       imageUrl = result.secure_url;
-//     } else if (req.body.image) {
-//       imageUrl = req.body.image;
-//     }
-
-//     project.title = req.body.title || project.title;
-//     project.description = req.body.description || project.description;
-//     project.image = imageUrl;
-//     project.link = req.body.link || project.link;
-
-//     await project.save();
-//     res.json(project);
-//   } catch (err) {
-//     console.error(err);
-//     res.status(500).json({ message: "Failed to update project" });
-//   }
-// });
 router.put("/:id", protect, upload.fields([
   { name: "image", maxCount: 1 },
   { name: "screenshots" }
