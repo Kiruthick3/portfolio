@@ -56,7 +56,7 @@ function ProjectsAdminInner() {
   const handleLogout = () => {
     localStorage.removeItem("token");  
     API.defaults.headers.common["Authorization"] = null; 
-    window.location.href = "/admin/login"; 
+    window.location.href = "/"; 
   };
   const stripHtmlTags = (html) => html.replace(/<[^>]*>/g, "");
 
