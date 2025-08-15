@@ -53,6 +53,11 @@ function ProjectsAdminInner() {
       .filter(Boolean);
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("token");  
+    API.defaults.headers.common["Authorization"] = null; 
+    window.location.href = "/admin/login"; 
+  };
   const stripHtmlTags = (html) => html.replace(/<[^>]*>/g, "");
 
   const splitString = (str) =>
@@ -159,6 +164,7 @@ function ProjectsAdminInner() {
 
   return (
     <div className="admin-container">
+      <button className="btn" onClick={handleLogout}> Logout</button>
       <h2>Admin — Manage Projects</h2>
 
       <form onSubmit={handleSubmit} className="admin-form">
